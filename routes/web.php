@@ -25,11 +25,16 @@ Route::post('/dashboard/user-management', 'admin\UserManagementController@store'
 Route::get('/dashboard/logfile', 'admin\LogFileController@index')->name('log.view');
 
 Route::get('/dashboard/take-attendance', 'admin\TakeAttendanceController@index')->name('take.attendance.view');
+Route::get('/dashboard/take-attendance/{id}', 'admin\TakeAttendanceController@show')->name('take.attendance.show');
+Route::get('/dashboard/take-attendance/{id}/student', 'admin\TakeAttendanceController@edit')->name('take.attendance.edit');
 
 // Student Routes
 
 Route::get('/dashboard/view-attendance', 'student\ViewAttendanceController@index')->name('view.attendance.view');
 
 Route::get('/dashboard/view-exams', 'student\ViewExamsController@index')->name('view.exams.view');
+
+// 2fa
+Route::post('2fa', 'TwoFactorController@verifyTwoFactor');
 
 

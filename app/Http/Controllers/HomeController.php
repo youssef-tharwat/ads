@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Course;
 use App\Exam;
+use App\Subject;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -26,8 +29,15 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //Admin Section
 
-        $studentsNumber = count(Auth::user()->hasRole('student')); //Student Count
+        $studentsNumber = count(DB::table('role_user')->where('role_id','=', '2')->get()); //Student Count
+        $coursesNumber = count(Course::all());
+        $examsNumber = count(Exam::all());
+        $subjectsNumber = count(Subject::all());
+
+        //Student Section
+
 
         if(Auth::user()->hasRole('student')){
 
@@ -37,6 +47,6 @@ class HomeController extends Controller
             $lowAttendanceSubjects = $student->subjects; //Todo Low Attendance Subject's Count
         }
 
-        return view('dashboard.dashboard', compact('studentExams', 'studentsNumber'));
+        return view('dashboard.dashboard', compact('studentExams', 'studentsNumber','coursesNumber','examsNumber','subjectsNumber'));
     }
 }

@@ -7,10 +7,17 @@ use App\Http\Controllers\Controller;
 use App\Subject;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class ExamController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware(['role:admin']);
+    }
+
     public function index(){
 
         $subjects = Subject::all();
@@ -30,10 +37,14 @@ class ExamController extends Controller
             'subject_id' =>  $subject->id,
         ]);
 
+        activity()->log(Auth::user()->name.' created '.$request->exam_name.' exam');
+
 
         $students = DB::table('user_subjects')->where('subject_id', '=', $subject->id)->get();
 
+
         $exam = Exam::wherename($request->exam_name)->first();
+
 
         foreach($students as $student){
 

@@ -7,10 +7,17 @@ use App\Subject;
 use App\User;
 use Illuminate\Http\Request;
 use App\Course;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class SubjectController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['role:admin']);
+    }
+
+
     public function index(){
 
         $courses = Course::all();
@@ -27,6 +34,8 @@ class SubjectController extends Controller
            'name' => $request->subject_name,
            'course_id' =>  $course->id,
         ]);
+
+        activity()->log(Auth::user()->name.' created '.$request->subject_name.' subject');
 
         $students = User::wherecourse($request->course)->get();
 

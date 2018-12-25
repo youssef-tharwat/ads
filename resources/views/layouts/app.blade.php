@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>ADS</title>
     <!-- Bootstrap core CSS-->
     <link href="{{asset('dashboard-assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -15,6 +16,11 @@
     <link href="{{asset('dashboard-assets/vendor/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="{{asset('dashboard-assets/css/sb-admin.css')}}" rel="stylesheet">
+    <style type="text/css">
+        .active-link{
+            color: white !important;
+        }
+    </style>
     @yield('css')
 
 

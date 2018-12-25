@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -35,5 +37,14 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function authenticated()
+    {
+        $user = Auth::user();
+        $user->token_2fa_expiry = Carbon::now();
+        $user->save();
+        activity()->log(Auth::user()->name.' logged in');
+        return redirect()->route('home');
     }
 }

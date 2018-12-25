@@ -3,15 +3,22 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Course;
+use App\Exam;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class UserManagementController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware(['role:admin']);
+    }
 
     public function index(){
 
@@ -47,6 +54,9 @@ class UserManagementController extends Controller
 
             $user->attachRole('admin');
 
+            activity()->log(Auth::user()->name.' created '.$request->name.' admin user');
+
+
             return redirect()->back()->with('message', 'Admin User Successfully Registered');
 
         } else if ($request->role == 'Student'){
@@ -74,6 +84,8 @@ class UserManagementController extends Controller
 
             $user->attachRole('student');
 
+            activity()->log(Auth::user()->name.' created '.$request->name.' student user');
+
             $course = Course::wherename($request->course)->first();
 
             $user = User::whereemail($request->email)->first();
@@ -85,7 +97,26 @@ class UserManagementController extends Controller
                     'user_id' => $user->id,
                     'attendance' => 0,
                 ]);
+
+
             }
+
+            foreach($user->subjects as $_subject){
+
+                $exam = Exam::where('subject_id', '=', $_subject['id'])->first();
+
+                if ($exam['id'] != null){
+
+                    DB::table('user_exams')->insert([
+                        'user_id' => $user->id,
+                        'exam_id' => $exam['id'],
+                        'attended' => 0,
+                        'score' => 0,
+                    ]);
+                }
+
+            }
+
 
             return redirect()->back()->with('message', 'Student User Successfully Registered');
 

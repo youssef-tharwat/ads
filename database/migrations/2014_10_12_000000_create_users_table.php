@@ -27,6 +27,8 @@ class CreateUsersTable extends Migration
             $table->string('intake')->nullable();
             $table->string('phone_number');
             $table->string('department')->nullable();
+            $table->string('token_2fa')->nullable();
+            $table->datetime('token_2fa_expiry')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

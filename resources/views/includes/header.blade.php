@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background: #0F78B1">
     <a class="navbar-brand" href="{{route('home')}}">ADS</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,7 @@
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right">
-                <a class="nav-link" href="{{route('home')}}">
+                <a class="nav-link {{request()->is('dashboard') ? 'active-link': ''}}" href="{{route('home')}}">
                     <i class="fa fa-fw fa-dashboard"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
@@ -16,36 +16,40 @@
 
             @if(\Illuminate\Support\Facades\Auth::user()->hasRole('admin'))
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" >
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+                    <a class="nav-link nav-link-collapse collapsed {{ request()->is('dashboard/course-management/assign-subject') ? 'active-link': request()->is('dashboard/course-management/assign-exam') ? 'active-link' : ''}}"
+                       data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
                         <i class="fa fa-fw fa-book"></i>
                         <span class="nav-link-text">Course Management</span>
                     </a>
                     <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                         <li>
-                            <a href="{{route('subject.view')}}">Assign Subject</a>
+                            <a href="{{route('subject.view')}}" class="{{ request()->is('dashboard/course-management/assign-subject') ? 'active-link' : ''}}">Assign Subject</a>
                         </li>
                         <li>
-                            <a href="{{route('exam.view')}}">Assign Exam</a>
+                            <a href="{{route('exam.view')}}" class="{{ request()->is('dashboard/course-management/assign-exam') ? 'active-link' : ''}}">Assign Exam</a>
                         </li>
 
                     </ul>
                 </li>
+
                 <li class="nav-item" data-toggle="tooltip" data-placement="right">
-                    <a class="nav-link" href="{{route('user.view')}}">
+                    <a class="nav-link {{request()->is('dashboard/user-management') ? 'active-link' : ''}}" href="{{route('user.view')}}">
                         <i class="fa fa-fw fa-users"></i>
                         <span class="nav-link-text">User Management</span>
                     </a>
                 </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right">
-                    <a class="nav-link" href="{{route('log.view')}}">
-                        <i class="fa fa-fw fa-archive"></i>
-                        <span class="nav-link-text">Log File</span>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" >
+                    <a class="nav-link {{ request()->is('dashboard/take-attendance') ? 'active-link': request()->is('dashboard/take-attendance/*') ? 'active-link' : ''}}" href="{{route('take.attendance.view')}}">
+                        <i class="fa fa-fw fa-pencil-square-o"></i>
+                        <span class="nav-link-text">Take Exam Attendance</span>
                     </a>
                 </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="right" >
-                    <a class="nav-link" href="{{route('take.attendance.view')}}">
-                        <i class="fa fa-fw fa-pencil-square-o"></i>
-                        <span class="nav-link-text">Take Attendance</span>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                    <a class="nav-link {{request()->is('dashboard/logfile') ? 'active-link' : ''}}" href="{{route('log.view')}}">
+                        <i class="fa fa-fw fa-archive"></i>
+                        <span class="nav-link-text">Log File</span>
                     </a>
                 </li>
             @endif

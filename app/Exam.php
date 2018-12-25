@@ -11,6 +11,6 @@ class Exam extends Model
     ];
 
     public function user(){
-        return $this->belongsToMany('App\User');
+        return $this->belongsToMany('App\User', 'user_exams');
     }
 }
