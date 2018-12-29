@@ -29,7 +29,7 @@
                 <li class="breadcrumb-item">
                     <a href="{{route('home')}}">Dashboard</a>
                 </li>
-                <li class="breadcrumb-item active">Take Attendance</li>
+                <li class="breadcrumb-item active">Take Exam Attendance</li>
             </ol>
 
             <div class="card mb-3">

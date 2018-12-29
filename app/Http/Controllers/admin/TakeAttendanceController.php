@@ -50,6 +50,7 @@ class TakeAttendanceController extends Controller
                 'tp' => $student['tp'],
                 'course' => $student['course'],
                 'intake' => $student['intake'],
+               'docket' =>$studentExam->docket,
                'user_id' => $studentExam->user_id,
                'exam_id' => $studentExam->exam_id,
                'checkbox' => $studentExam->attended,

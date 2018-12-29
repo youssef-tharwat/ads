@@ -56,13 +56,13 @@
 
             @if(Auth::user()->hasRole('student'))
                 <li class="nav-item" data-toggle="tooltip" data-placement="right">
-                    <a class="nav-link" href="{{route('view.attendance.view')}}">
+                    <a class="nav-link {{request()->is('dashboard/view-attendance') ? 'active-link' : ''}}" href="{{route('view.attendance.view')}}">
                         <i class="fa fa-fw fa-calendar-check-o"></i>
                         <span class="nav-link-text">View Attendance</span>
                     </a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="right">
-                    <a class="nav-link" href="{{route('view.exams.view')}}">
+                    <a class="nav-link {{request()->is('dashboard/view-exams') ? 'active-link' : ''}}" href="{{route('view.exams.view')}}">
                         <i class="fa fa-fw fa-file"></i>
                         <span class="nav-link-text">View Exams</span>
                     </a>

@@ -38,15 +38,27 @@ class HomeController extends Controller
 
         //Student Section
 
-
         if(Auth::user()->hasRole('student')){
+
+            $attendancePercentageCounter = 0;
 
             $student = User::find(Auth::user()->id); // Logged in student
 
-            $studentExams = count($student->exams);  // Exam Count
-            $lowAttendanceSubjects = $student->subjects; //Todo Low Attendance Subject's Count
+            $attendances = DB::table('user_subjects')->where('user_id', '=', Auth::user()->id)->get();
+
+            foreach ($attendances as $attendance){
+                $attendancePercentageCounter += $attendance->attendance;
+            }
+
+            $totalAttendance = $attendancePercentageCounter / count($attendances);
+
+            $totalLowAttendanceSubjects = count(DB::table('user_subjects')->where('user_id', '=', Auth::user()->id)
+                ->where('attendance', '<', 70)->get());
+            $studentExams = count($student->exams);
+            $studentSubjects = count($student->subjects);
+
         }
 
-        return view('dashboard.dashboard', compact('studentExams', 'studentsNumber','coursesNumber','examsNumber','subjectsNumber'));
+        return view('dashboard.dashboard', compact('studentExams', 'studentSubjects' , 'totalLowAttendanceSubjects', 'totalAttendance' ,'studentsNumber','coursesNumber','examsNumber','subjectsNumber'));
     }
 }

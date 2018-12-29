@@ -29,7 +29,11 @@
                 <li class="breadcrumb-item">
                     <a href="{{route('home')}}">Dashboard</a>
                 </li>
-                <li class="breadcrumb-item active">Take Attendance</li>
+                <li class="breadcrumb-item">
+                    <a href="{{route('take.attendance.view')}}">Take Exam Attendance</a>
+                </li>
+                <li class="breadcrumb-item active">{{$exam->name}} Exam Attendance
+                </li>
             </ol>
 
             <div class="card mb-3">
@@ -42,6 +46,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>TP</th>
+                                <th>Docket</th>
                                 <th>Course</th>
                                 <th>intake</th>
                                 <th>Attendance</th>
@@ -52,6 +57,7 @@
                                 <tr>
                                     <td>{{$checkbox['name']}}</td>
                                     <td>{{$checkbox['tp']}}</td>
+                                    <td>{{$checkbox['docket']}}</td>
                                     <td>{{$checkbox['course']}}</td>
                                     <td>{{$checkbox['intake']}}</td>
                                     <td style="text-align: center;">

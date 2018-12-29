@@ -112,6 +112,7 @@ class UserManagementController extends Controller
                         'exam_id' => $exam['id'],
                         'attended' => 0,
                         'score' => 0,
+                        'docket' => uniqid(),
                     ]);
                 }
 

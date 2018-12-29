@@ -85,6 +85,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
         @endif
 
@@ -98,7 +99,7 @@
                                 <div class="card-body-icon">
                                     <i class="fa fa-fw fa-sticky-note-o"></i>
                                 </div>
-                                <div class="mr-5">3 Total Attendance</div>
+                                <div class="mr-5">{{$totalAttendance}}% Total Attendance</div>
                             </div>
 
                         </div>
@@ -109,7 +110,8 @@
                                 <div class="card-body-icon">
                                     <i class="fa fa-fw fa-list"></i>
                                 </div>
-                                <div class="mr-5">3 Low Attendance Subjects</div>
+                                <div class="mr-5">{{ count($totalLowAttendanceSubjects) > 1 ? $totalLowAttendanceSubjects.' Low Attendance Subjects':
+                                $totalLowAttendanceSubjects.' Low Attendance Subject' }} </div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +121,8 @@
                                 <div class="card-body-icon">
                                     <i class="fa fa-fw fa-shopping-cart"></i>
                                 </div>
-                                <div class="mr-5">5 Exams</div>
+                                <div class="mr-5">{{ count($studentExams) > 1 ? $studentExams.' Exams':
+                                $studentExams.' Exam' }}</div>
                             </div>
                         </div>
                     </div>
@@ -129,8 +132,31 @@
                                 <div class="card-body-icon">
                                     <i class="fa fa-fw fa-support"></i>
                                 </div>
-                                <div class="mr-5">6 Subjects</div>
+                                <div class="mr-5">{{ count($studentSubjects) > 1 ? $studentSubjects.' Subjects':
+                                $studentSubjects.' Subject' }}</div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h3 class="mb-3">View Exams And Get Dockets</h3>
+                            <form role="form" method="POST" action="/2fa-s">
+                                {{ csrf_field() }}
+                                <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
+                                    <input id="2fa" type="text" class="form-control" name="2fa-s" placeholder="Enter the code you received here." required autofocus>
+                                    @if ($errors->has('2fa'))
+                                        <span class="help-block">
+                        <strong>{{ $errors->first('2fa') }}</strong>
+                        </span>
+                                    @endif
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary" type="submit">Verify</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

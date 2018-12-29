@@ -36,5 +36,6 @@ Route::get('/dashboard/view-exams', 'student\ViewExamsController@index')->name('
 
 // 2fa
 Route::post('2fa', 'TwoFactorController@verifyTwoFactor');
+Route::post('2fa-s', 'TwoFactorControllerStudents@verifyTwoFactor');
 
 

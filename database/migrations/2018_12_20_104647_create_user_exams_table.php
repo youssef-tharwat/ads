@@ -19,6 +19,7 @@ class CreateUserExamsTable extends Migration
             $table->integer('exam_id');
             $table->boolean('attended');
             $table->integer('score');
+            $table->string('docket');
             $table->timestamps();
         });
     }
