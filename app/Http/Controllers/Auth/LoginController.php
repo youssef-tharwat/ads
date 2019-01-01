@@ -42,7 +42,7 @@ class LoginController extends Controller
     public function authenticated()
     {
         $user = Auth::user();
-        $user->token_2fa_expiry = Carbon::now();
+        $user->token_2fa_expiry = Carbon::now()->timezone('Asia/Singapore');
         $user->save();
         activity()->log(Auth::user()->name.' logged in');
         return redirect()->route('home');

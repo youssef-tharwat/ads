@@ -14,7 +14,8 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "santigarcor/laratrust": "4.0.*",
-        "spatie/laravel-activitylog": "^3.1"
+        "spatie/laravel-activitylog": "^3.1",
+        "spatie/laravel-medialibrary": "^7.5"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

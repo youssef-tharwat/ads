@@ -54,7 +54,13 @@
                                     <td>{{$examArray['subjectAttendance']->attendance}}</td>
                                     <td>{{$examArray['startDate']}}</td>
                                     <td>{{$examArray['duration']}}</td>
-                                    <td>{{$examArray['examDocket']->docket}}</td>
+                                    <td style="background-color: {{
+                                    $examArray['subjectAttendance']->attendance >= 80 ? 'lawngreen' : 'red'
+                                    }}"><a href="{{ $examArray['subjectAttendance']->attendance >= 80 ? route('generate.exam.pdf',
+                                    [
+                                    'id' => \Illuminate\Support\Facades\Auth::user()->id,
+                                    'exam_id' => $examArray['id'],
+                                    ]) : '#'}}">{{$examArray['subjectAttendance']->attendance >= 80 ? 'Download Docket' : 'Low Attendance' }}</a></td>
                                 </tr>
                             @endforeach
                             </tbody>

@@ -53,12 +53,24 @@ class HomeController extends Controller
             $totalAttendance = $attendancePercentageCounter / count($attendances);
 
             $totalLowAttendanceSubjects = count(DB::table('user_subjects')->where('user_id', '=', Auth::user()->id)
-                ->where('attendance', '<', 70)->get());
+                ->where('attendance', '<', 80)->get());
             $studentExams = count($student->exams);
             $studentSubjects = count($student->subjects);
 
         }
 
         return view('dashboard.dashboard', compact('studentExams', 'studentSubjects' , 'totalLowAttendanceSubjects', 'totalAttendance' ,'studentsNumber','coursesNumber','examsNumber','subjectsNumber'));
+    }
+
+    public function upload(Request $request){
+
+        $avatarName = $request->file('avatar')->getClientOriginalName();
+        $request->file('avatar')->move(public_path('storage/avatars'), $avatarName);
+
+        $user = Auth::user();
+        $user->avatar = $avatarName;
+        $user->save();
+
+        return redirect()->route('home');
     }
 }

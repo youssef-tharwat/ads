@@ -20,6 +20,14 @@
         .active-link{
             color: white !important;
         }
+        #upload-image-form * {
+            margin:0.5em 0;
+        }
+
+        #upload-image-form.dropdown-item:active{
+            color:black;
+            background: none;
+        }
     </style>
     @yield('css')
 

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class TwoFactorControllerStudents extends Controller
 {
+
     public function verifyTwoFactor(Request $request)
     {
         $request->validate([

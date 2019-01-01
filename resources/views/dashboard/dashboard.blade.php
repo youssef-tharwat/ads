@@ -79,6 +79,7 @@
                                     @endif
                                 </div>
                                 <div class="form-group">
+                                    <a class="btn btn-warning" href="{{route('send.code.admin')}}">Send Code</a>
                                     <button class="btn btn-primary" type="submit">Verify</button>
                                 </div>
                             </form>
@@ -154,7 +155,9 @@
                                     @endif
                                 </div>
                                 <div class="form-group">
+                                    <a class="btn btn-warning" href="{{route('send.code.student')}}">Send Code</a>
                                     <button class="btn btn-primary" type="submit">Verify</button>
+
                                 </div>
                             </form>
                         </div>

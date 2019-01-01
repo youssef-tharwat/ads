@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Auth;
 class TwoFactorController extends Controller
 {
 
-
     public function verifyTwoFactor(Request $request)
     {
         $request->validate([

@@ -67,12 +67,15 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
+        $avatarName = $data['avatar']->getClientOriginalName();
+        $data['avatar']->move(public_path('storage/avatars'), $avatarName);
+
         $user =  User::create([
 
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'avatar' => 'default.jpg',
+            'avatar' => $avatarName,
             'birthday'=> $data['birthday'],
             'IDC'=> $data['IDC'],
             'phone_number' => $data['country_code'].$data['phone'],
@@ -81,8 +84,8 @@ class RegisterController extends Controller
             'intake'=> $data['intake'],
         ]);
 
-        $user->attachRole('student');
 
+        $user->attachRole('student');
 
         $course = Course::wherename($data['course'])->first();
 

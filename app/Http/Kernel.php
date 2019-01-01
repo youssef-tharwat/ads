@@ -65,6 +65,7 @@ class Kernel extends HttpKernel
         'permission' => \Laratrust\Middleware\LaratrustPermission::class,
         'ability' => \Laratrust\Middleware\LaratrustAbility::class,
         'two_factor' => \App\Http\Middleware\TwoFactorVerify::class,
+        'two_factor_button'=> \App\Http\Middleware\TwoFactorVerifyButton::class,
     ];
 
     /**

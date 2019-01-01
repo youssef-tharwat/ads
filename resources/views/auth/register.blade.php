@@ -21,18 +21,35 @@
 
     <!-- Main CSS-->
     <link href="{{asset('form-assets/css/main.css')}}" rel="stylesheet" media="all">
+    <style type="text/css">
+        .page-wrapper{
+            background: #0F78B1;
+        }
+    </style>
 </head>
 
 <body>
     <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
-        <h1 class="title" style="margin-bottom: 1em;">Apu Online Docket System</h1>
+        <div style="margin-bottom: 1.5em;
+    display: flex;
+    justify-content: center;">
+            <img style="max-width: 150px;
+    max-height: 138px;" class="img-fluid" src="{{asset('form-assets/images/apu.png')}}" alt="">
+        </div>
+        <div style="display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1em 0 3em 0;">
+            <h1 class="title">Apu Online Docket System</h1>
+        </div>
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
                     <h2 class="title">Registration</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-row m-b-55">
@@ -142,6 +159,15 @@
                             <div class="value">
                                 <div class="input-group">
                                     <input class="input--style-5" type="text" required name="intake" placeholder="UC2F1804SE" maxlength="12">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Avatar</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input style="padding: 13px 15px;display: flex;align-items: center;" class="input--style-5" type="file" id="avatar" required name="avatar" >
                                 </div>
                             </div>
                         </div>

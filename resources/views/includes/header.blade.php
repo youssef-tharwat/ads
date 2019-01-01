@@ -77,19 +77,32 @@
                 </a>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
+
+            <li class="nav-item" data-placement="center">
+                <img src="{{asset('storage/avatars/'.Auth::user()->avatar)}}" class="img-fluid" style=" max-width: 50px;max-height: 40px;border-radius: 20px; margin-right: 1em;" alt="avatar">
+
+            </li>
 
             <li class="nav-item" data-placement="center">
                 <div class="dropdown show">
                     <a class="nav-link dropdown-toggle" id="dropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-fw fa-user"></i>
                         <span class="nav-link-text">{{\Illuminate\Support\Facades\Auth::user()->name}}</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Upload Picture</a>
+
+                        <form id="upload-image-form" class="dropdown-item" action="{{route('upload.avatar')}}" method="POST"  enctype="multipart/form-data" style="display: flex;flex-direction: column;">
+                            @csrf
+                            <div class="name" style="text-align: center;">Upload Image</div>
+                            <input type="file" name="avatar" id="avatar" class="input--style-5">
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </form>
+
                     </div>
                 </div>
             </li>
+
+
 
             @if(Auth::user()->hasRole('student'))
                 <li class="nav-item" data-placement="center">

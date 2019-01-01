@@ -25,17 +25,17 @@ class TwoFactorVerify
 
                 $user = Auth::user();
 
-                if( $user->token_2fa_expiry >  Carbon::now()->timezone('Asia/Singapore')){
+                if( $user->token_2fa_expiry >  Carbon::now()->timezone('Asia/Singapore')){  //If user is already verified
                     return $next($request);
                 }
 
-                $user->token_2fa = mt_rand(10000,99999);
-                $user->save();
+//                $user->token_2fa = mt_rand(10000,99999);
+//                $user->save();
+//
+//                Notification::route('mail', $user->email)
+//                    ->notify(new AdminAttendanceCode($user->token_2fa)); // Admin Email
 
-                Notification::route('mail', $user->email)
-                    ->notify(new AdminAttendanceCode($user->token_2fa));
-
-                return redirect()->route('home');
+                return redirect()->route('home'); // If user is not verified
 
             }  else if (Auth::user()->hasRole('student')){
 
@@ -45,11 +45,11 @@ class TwoFactorVerify
                     return $next($request);
                 }
 
-                $user->token_2fa = mt_rand(10000,99999);
-                $user->save();
-
-                Notification::route('mail', $user->email)
-                    ->notify(new StudentExamViewCode($user->token_2fa));
+//                $user->token_2fa = mt_rand(10000,99999);
+//                $user->save();
+//
+//                Notification::route('mail', $user->email)
+//                    ->notify(new StudentExamViewCode($user->token_2fa));
 
                 return redirect()->route('home');
 

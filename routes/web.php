@@ -10,6 +10,7 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/dashboard', 'HomeController@index')->name('home');
+Route::post('/dashboard/upload-picture', 'HomeController@upload')->name('upload.avatar');
 
 // Admin Routes
 
@@ -31,11 +32,18 @@ Route::get('/dashboard/take-attendance/{id}/student', 'admin\TakeAttendanceContr
 // Student Routes
 
 Route::get('/dashboard/view-attendance', 'student\ViewAttendanceController@index')->name('view.attendance.view');
-
 Route::get('/dashboard/view-exams', 'student\ViewExamsController@index')->name('view.exams.view');
+Route::get('/dashboard/view-exams/generate-pdf/{id}/{exam_id}', 'student\ViewExamsController@generatePDF')->name('generate.exam.pdf');
 
 // 2fa
+
 Route::post('2fa', 'TwoFactorController@verifyTwoFactor');
 Route::post('2fa-s', 'TwoFactorControllerStudents@verifyTwoFactor');
+
+
+//2fa Send Code Admin
+
+Route::get('/dashboard/sendcode-admin', 'TwoFactorControllerButton@index')->name('send.code.admin');
+Route::get('/dashboard/sendcode-admin', 'TwoFactorControllerStudentButton@index')->name('send.code.student');
 
 
