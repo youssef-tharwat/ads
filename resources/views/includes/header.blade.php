@@ -14,6 +14,13 @@
                 </a>
             </li>
 
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link {{request()->is('dashboard/user-profile/*') ? 'active-link': ''}}" href="{{route('profile.view', ['id' => Auth::user()->id])}}]}}">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span class="nav-link-text">Profile</span>
+                </a>
+            </li>
+
             @if(\Illuminate\Support\Facades\Auth::user()->hasRole('admin'))
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" >
                     <a class="nav-link nav-link-collapse collapsed {{ request()->is('dashboard/course-management/assign-subject') ? 'active-link': request()->is('dashboard/course-management/assign-exam') ? 'active-link' : ''}}"
@@ -77,11 +84,25 @@
                 </a>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
+        <ul class="navbar-nav ml-auto" style="display: flex; align-items: baseline;">
 
-            <li class="nav-item" data-placement="center">
-                <img src="{{asset('storage/avatars/'.Auth::user()->avatar)}}" class="img-fluid" style=" max-width: 50px;max-height: 40px;border-radius: 20px; margin-right: 1em;" alt="avatar">
 
+            <li class="nav-item" data-placement="center" style="margin-right: 1em;">
+                <div class="dropdown show">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0;">
+                        <img src="{{asset('storage/avatars/'.Auth::user()->avatar)}}" class="img-fluid" style=" max-width: 50px;max-height: 40px;border-radius: 20px;" alt="avatar">
+                    </a>
+                    <div class="dropdown-menu" style="left: -11em;" aria-labelledby="dropdownMenuLink">
+
+                        <form id="upload-image-form" class="dropdown-item" action="{{route('upload.avatar')}}" method="POST"  enctype="multipart/form-data" style="display: flex;flex-direction: column;">
+                            @csrf
+                            <div class="name" style="text-align: center;">Upload Image</div>
+                            <input type="file" name="avatar" required id="avatar" class="input--style-5">
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </form>
+
+                    </div>
+                </div>
             </li>
 
             <li class="nav-item" data-placement="center">
@@ -91,12 +112,9 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
-                        <form id="upload-image-form" class="dropdown-item" action="{{route('upload.avatar')}}" method="POST"  enctype="multipart/form-data" style="display: flex;flex-direction: column;">
-                            @csrf
-                            <div class="name" style="text-align: center;">Upload Image</div>
-                            <input type="file" name="avatar" required id="avatar" class="input--style-5">
-                            <button type="submit" class="btn btn-primary">Upload</button>
-                        </form>
+                        <a class="dropdown-item" href="{{route('profile.view', ['id' => Auth::user()->id])}}" >
+                         Profile
+                        </a>
 
                     </div>
                 </div>

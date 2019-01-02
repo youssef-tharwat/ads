@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\LogFilesExport;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Activity;
 
 class LogFileController extends Controller
@@ -37,5 +39,9 @@ class LogFileController extends Controller
         }
 
         return view('dashboard.admin.log_file', compact('logs'));
+    }
+
+    public function export(){
+        return Excel::download(new LogFilesExport(), 'log.xlsx', null, true);
     }
 }

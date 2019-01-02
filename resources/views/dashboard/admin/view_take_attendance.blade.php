@@ -55,7 +55,7 @@
                             <tbody>
                             @foreach($checkboxStatus as $checkbox)
                                 <tr>
-                                    <td>{{$checkbox['name']}}</td>
+                                    <td><a target="_blank" href="{{route('profile.view', ['id' => $checkbox['id']])}}">{{$checkbox['name']}}</a></td>
                                     <td>{{$checkbox['tp']}}</td>
                                     <td>{{$checkbox['docket']}}</td>
                                     <td>{{$checkbox['course']}}</td>

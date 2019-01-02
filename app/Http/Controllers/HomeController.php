@@ -73,4 +73,11 @@ class HomeController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function view($id){
+
+        $user = User::find($id);
+
+        return view('dashboard.view_profile', compact('user'));
+    }
 }

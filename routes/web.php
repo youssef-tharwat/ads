@@ -11,6 +11,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/dashboard', 'HomeController@index')->name('home');
 Route::post('/dashboard/upload-picture', 'HomeController@upload')->name('upload.avatar');
+Route::get('/dashboard/user-profile/{id}', 'HomeController@view')->name('profile.view');
 
 // Admin Routes
 
@@ -24,6 +25,7 @@ Route::get('/dashboard/user-management', 'admin\UserManagementController@index')
 Route::post('/dashboard/user-management', 'admin\UserManagementController@store')->name('user.store');
 
 Route::get('/dashboard/logfile', 'admin\LogFileController@index')->name('log.view');
+Route::get('/dashboard/logfile/export', 'admin\LogFileController@export')->name('log.export');
 
 Route::get('/dashboard/take-attendance', 'admin\TakeAttendanceController@index')->name('take.attendance.view');
 Route::get('/dashboard/take-attendance/{id}', 'admin\TakeAttendanceController@show')->name('take.attendance.show');
