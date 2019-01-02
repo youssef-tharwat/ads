@@ -44,6 +44,6 @@ Route::post('2fa-s', 'TwoFactorControllerStudents@verifyTwoFactor');
 //2fa Send Code Admin
 
 Route::get('/dashboard/sendcode-admin', 'TwoFactorControllerButton@index')->name('send.code.admin');
-Route::get('/dashboard/sendcode-admin', 'TwoFactorControllerStudentButton@index')->name('send.code.student');
+Route::get('/dashboard/sendcode-student', 'TwoFactorControllerStudentButton@index')->name('send.code.student');
 
 

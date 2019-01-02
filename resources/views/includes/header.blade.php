@@ -94,7 +94,7 @@
                         <form id="upload-image-form" class="dropdown-item" action="{{route('upload.avatar')}}" method="POST"  enctype="multipart/form-data" style="display: flex;flex-direction: column;">
                             @csrf
                             <div class="name" style="text-align: center;">Upload Image</div>
-                            <input type="file" name="avatar" id="avatar" class="input--style-5">
+                            <input type="file" name="avatar" required id="avatar" class="input--style-5">
                             <button type="submit" class="btn btn-primary">Upload</button>
                         </form>
 
