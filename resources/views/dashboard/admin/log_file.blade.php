@@ -64,16 +64,29 @@
 
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fa fa-angle-up"></i>
+            <i class="fa fa-angle-up "></i>
         </a>
+
     </div>
 @endsection
 
 @section('js')
     <script type="text/javascript">
        function changeTableHeader() {
-           const searchContentHTML = ' <label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label>\n' +
-               '            <a style="margin-left:1em;" class="btn btn-primary btn-sm" href="{{route('log.export')}}">Export to Excel</a>';
+           const searchContentHTML = ' <div class="d-flex flex-row" style="align-items:base-line; justify-content:flex-end">' +
+               ' <label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label>\n' +
+               ' <div class="dropdown show" style="margin-left:1em;">\n' +
+               '            <a class="btn btn-primary btn-sm dropdown-toggle" id="dropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\n' +
+               '                Export\n' +
+               '            </a>\n' +
+               '            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">\n' +
+               '\n' +
+               '                <a class="dropdown-item" href="{{route('log.export.excel')}}">Export to Excel</a>\n' +
+               '                <a class="dropdown-item" href="{{route('log.export.csv')}}">Export to CSV</a>\n' +
+               '\n' +
+               '            </div>\n' +
+               '        </div>' +
+               '</div>';
            $('#dataTable_filter').html(searchContentHTML);
        }
 

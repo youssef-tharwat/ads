@@ -25,7 +25,8 @@ Route::get('/dashboard/user-management', 'admin\UserManagementController@index')
 Route::post('/dashboard/user-management', 'admin\UserManagementController@store')->name('user.store');
 
 Route::get('/dashboard/logfile', 'admin\LogFileController@index')->name('log.view');
-Route::get('/dashboard/logfile/export', 'admin\LogFileController@export')->name('log.export');
+Route::get('/dashboard/logfile/export/excel', 'admin\LogFileController@exportExcel')->name('log.export.excel');
+Route::get('/dashboard/logfile/export/csv', 'admin\LogFileController@exportCsv')->name('log.export.csv');
 
 Route::get('/dashboard/take-attendance', 'admin\TakeAttendanceController@index')->name('take.attendance.view');
 Route::get('/dashboard/take-attendance/{id}', 'admin\TakeAttendanceController@show')->name('take.attendance.show');

@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922b5f38-349a-43fe-a1e7-90f97f3f8536" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Exports/LogFilesExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ADS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ADS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exports/LogFilesExportCsv.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/LogFileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/LogFileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/log_file.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/log_file.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/view_take_attendance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/view_take_attendance.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,43 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view_profile.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-              <folding>
-                <element signature="e#670#696#0#HTML" expanded="true" />
-                <element signature="e#747#791#0#HTML" expanded="true" />
-                <element signature="e#949#975#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_take_attendance.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/dashboard/admin/view_take_attendance.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TakeAttendanceController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/TakeAttendanceController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="46" column="41" lean-forward="true" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="114" column="108" selection-start-line="114" selection-start-column="108" selection-end-line="114" selection-end-column="108" />
+            <state relative-caret-position="136">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -128,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/UserManagmentController.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserSubjectsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Subject.php" />
@@ -171,14 +131,15 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard/admin/log_file.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/LogFileController.php" />
         <option value="$PROJECT_DIR$/app/Exports/LogFilesExport.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/admin/view_take_attendance.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Exports/LogFilesExportCsv.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/LogFileController.php" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard/admin/log_file.blade.php" />
       </list>
     </option>
   </component>
@@ -310,8 +271,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-61" />
-    <option name="y" value="-26" />
+    <option name="x" value="121" />
+    <option name="y" value="183" />
     <option name="width" value="1382" />
     <option name="height" value="718" />
   </component>
@@ -323,7 +284,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,78 +300,28 @@
               <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
               <item name="ADS" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Exports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="avatars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADS" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="takeatt&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/TakeAttendanceController.php&#10;takea&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;view&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/view_profile.blade.php&#10;header&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/includes/header.blade.php&#10;dashbo&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/dashboard.blade.php&#10;dashb&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/dashboard.blade.php&#10;homecon&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/ADS/routes/web.php&#10;Logfi&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/LogFileController.php&#10;viewa&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;take&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;log&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/log_file.blade.php&#10;TwoFactorControllerStudentButton&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorControllerStudentButton.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/layouts/app.blade.php&#10;regis&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/auth/register.blade.php&#10;filesys&#9;FILE&#9;file://C:/xampp/htdocs/ADS/config/filesystems.php&#10;app.p&#9;FILE&#9;file://C:/xampp/htdocs/ADS/config/app.php&#10;User&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/User.php&#10;Login&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/auth/login.blade.php&#10;register&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/auth/register.blade.php&#10;Two&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorController.php&#10;kernel&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Kernel.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/Auth/LoginController.php&#10;twofac&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorController.php&#10;Twofa&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorControllerStudents.php&#10;twofa&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware/TwoFactorVerify.php&#10;viewe&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewExamsController.php&#10;dock&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/docket_pdf.blade.php&#10;Homecontr&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;view ex&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewExamsController.php&#10;viewexam&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/view_exams.blade.php&#10;viewat&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;Usermana&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/UserManagementController.php&#10;subjec&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/SubjectController.php&#10;exam&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/ExamController.php&#10;Homecon&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;Viewexams&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewExamsController.php&#10;viewex&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/view_exams.blade.php&#10;atten&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;view at&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/view_attendance.blade.php&#10;takat&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/ADS/.env&#10;T&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware/TwoFactorVerify.php&#10;two&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware/TwoFactorVerify.php&#10;student&#9;null&#9;null&#10;heade&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/includes/header.blade.php&#10;viewexa&#9;null&#9;null&#10;viewatt&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewAttendanceController.php&#10;middle&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware&#10;Takea&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/TakeAttendanceController.php" />
+    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://C:/xampp/htdocs/ADS/routes/web.php&#10;homecontr&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;header&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/includes/header.blade.php&#10;log&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/log_file.blade.php&#10;Logfile&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/LogFileController.php&#10;web.&#9;FILE&#9;file://C:/xampp/htdocs/ADS/routes/web.php&#10;takeatt&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/TakeAttendanceController.php&#10;takea&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;view&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/view_profile.blade.php&#10;dashbo&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/dashboard.blade.php&#10;dashb&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/dashboard.blade.php&#10;homecon&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;Logfi&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/LogFileController.php&#10;viewa&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;take&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;TwoFactorControllerStudentButton&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorControllerStudentButton.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/layouts/app.blade.php&#10;regis&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/auth/register.blade.php&#10;filesys&#9;FILE&#9;file://C:/xampp/htdocs/ADS/config/filesystems.php&#10;app.p&#9;FILE&#9;file://C:/xampp/htdocs/ADS/config/app.php&#10;User&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/User.php&#10;Login&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/auth/login.blade.php&#10;register&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/auth/register.blade.php&#10;Two&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorController.php&#10;kernel&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Kernel.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/Auth/LoginController.php&#10;twofac&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorController.php&#10;Twofa&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/TwoFactorControllerStudents.php&#10;twofa&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware/TwoFactorVerify.php&#10;viewe&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewExamsController.php&#10;dock&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/docket_pdf.blade.php&#10;Homecontr&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;view ex&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewExamsController.php&#10;viewexam&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/view_exams.blade.php&#10;viewat&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;Usermana&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/UserManagementController.php&#10;subjec&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/SubjectController.php&#10;exam&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/admin/ExamController.php&#10;Homecon&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/HomeController.php&#10;Viewexams&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Controllers/student/ViewExamsController.php&#10;viewex&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/view_exams.blade.php&#10;atten&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;view at&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/student/view_attendance.blade.php&#10;takat&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/dashboard/admin/view_take_attendance.blade.php&#10;env&#9;FILE&#9;file://C:/xampp/htdocs/ADS/.env&#10;T&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware/TwoFactorVerify.php&#10;two&#9;FILE&#9;file://C:/xampp/htdocs/ADS/app/Http/Middleware/TwoFactorVerify.php&#10;student&#9;null&#9;null&#10;heade&#9;FILE&#9;file://C:/xampp/htdocs/ADS/resources/views/includes/header.blade.php&#10;viewexa&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yjcrypt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laundary/vav (2)/vav" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ADS\app\Exports" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ADS\app\Http\Controllers\student" />
       <recent name="C:\xampp\htdocs\ADS\app\Http\Controllers\admin" />
@@ -458,7 +368,9 @@
       <workItem from="1546245030075" duration="7599000" />
       <workItem from="1546328585327" duration="7979000" />
       <workItem from="1546435678474" duration="590000" />
-      <workItem from="1546447196112" duration="5906000" />
+      <workItem from="1546447196112" duration="6089000" />
+      <workItem from="1546494361857" duration="1696000" />
+      <workItem from="1546692811909" duration="1666000" />
     </task>
     <task id="LOCAL-00001" summary="Course Management &amp; User Management">
       <created>1545510909923</created>
@@ -495,11 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546436237589</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="User Profile added, Export to excel added">
+      <created>1546453180393</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546453180393</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127411000" />
+    <option name="totallyTimeSpent" value="130956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -508,16 +427,16 @@
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32933104" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3214826" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21104388" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32980332" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -563,17 +482,11 @@
     <MESSAGE value="View attendance and View Exams (almost)" />
     <MESSAGE value="Added TP to the docket, Added image upload, Added Send Code button and some other style edits" />
     <MESSAGE value="default user image added and two factor auth for admin route fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="default user image added and two factor auth for admin route fixed" />
+    <MESSAGE value="User Profile added, Export to excel added" />
+    <MESSAGE value="Export to CSV added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Export to CSV added" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserSubjectsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserExamsTableSeeder.php" />
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2018-12-20.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-17051" />
@@ -593,13 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/admin/course management/assign_exam.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -653,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dashboard/student/view_attendance.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -692,13 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ExamController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -779,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TwoFactorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -814,16 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/LogFileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#46#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Exports/LogFilesExport.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -831,34 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/admin/log_file.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="79" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="79" column="3" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -883,17 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/header.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="114" column="108" selection-start-line="114" selection-start-column="108" selection-end-line="114" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/TakeAttendanceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="46" column="41" lean-forward="true" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        <state relative-caret-position="935">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -904,15 +748,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/view_profile.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/TakeAttendanceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+        <state relative-caret-position="178">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exports/LogFilesExportCsv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
-            <element signature="e#670#696#0#HTML" expanded="true" />
-            <element signature="e#747#791#0#HTML" expanded="true" />
-            <element signature="e#949#975#0#HTML" expanded="true" />
+            <element signature="e#31#48#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/admin/course management/assign_exam.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ExamController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="86" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard/admin/log_file.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/LogFileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#46#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/UserExam.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>

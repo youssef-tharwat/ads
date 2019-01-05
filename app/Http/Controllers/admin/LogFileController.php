@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Exports\LogFilesExport;
+use App\Exports\LogFilesExportCsv;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
@@ -41,7 +42,10 @@ class LogFileController extends Controller
         return view('dashboard.admin.log_file', compact('logs'));
     }
 
-    public function export(){
+    public function exportExcel(){
         return Excel::download(new LogFilesExport(), 'log.xlsx', null, true);
+    }
+    public function exportCsv(){
+        return Excel::download(new LogFilesExportCsv(), 'log.csv', null, true);
     }
 }

@@ -53,7 +53,7 @@
                                            <p><strong>Phone Number:</strong> {{$user->phone_number}}</p>
                                        </div>
 
-                                   @else 
+                                   @else
                                        <div>
                                            <p><strong>Name:</strong> {{$user->name}}</p>
                                            <p><strong>Email:</strong> {{$user->email}}</p>
